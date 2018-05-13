@@ -162,7 +162,7 @@ namespace ChocolateyGui.Services
                                                                        || options.SortColumn == "DownloadCount";
                             }
                             config.ListCommand.Exact = options.MatchQuery;
-                            if (!string.IsNullOrWhiteSpace(options.Source))
+                            if (!string.IsNullOrWhiteSpace(options.Source) && string.IsNullOrWhiteSpace(query))
                             {
                                 config.Sources = options.Source;
                             }
