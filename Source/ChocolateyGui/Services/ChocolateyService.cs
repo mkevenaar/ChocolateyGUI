@@ -162,9 +162,11 @@ namespace ChocolateyGui.Services
                                                                        || options.SortColumn == "DownloadCount";
                             }
                             config.ListCommand.Exact = options.MatchQuery;
-                            if (!string.IsNullOrWhiteSpace(options.Source) && string.IsNullOrWhiteSpace(query))
+                            if (!string.IsNullOrWhiteSpace(options.Source))
                             {
-                                config.Sources = options.Source;
+                                if (string.IsNullOrEmpty(query) || !options.SearchInAllRepos) {
+                                    config.Sources = options.Source;
+                                }
                             }
 #if !DEBUG
                             config.Verbose = false;
