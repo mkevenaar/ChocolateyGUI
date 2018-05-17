@@ -1235,7 +1235,7 @@ namespace ChocolateyGui.Properties {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Search In All Repos.
+        ///   Looks up a localized string similar to Search in all Repos.
         /// </summary>
         public static string SettingsView_SearchInAllRepos {
             get {

@@ -643,6 +643,6 @@ NOTE: Probably only necessary to change in RTL languages.</comment>
     <value>Version</value>
   </data>
   <data name="SettingsView_SearchInAllRepos" xml:space="preserve">
-    <value>Search In All Repos</value>
+    <value>Search in all Repos</value>
   </data>
 </root>
