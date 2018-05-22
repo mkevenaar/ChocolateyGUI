@@ -164,7 +164,8 @@ namespace ChocolateyGui.Services
                             config.ListCommand.Exact = options.MatchQuery;
                             if (!string.IsNullOrWhiteSpace(options.Source))
                             {
-                                if (string.IsNullOrEmpty(query) || !options.SearchInAllRepos) {
+                                if (string.IsNullOrEmpty(query) || !options.SearchInAllRepos)
+                                {
                                     config.Sources = options.Source;
                                 }
                             }
